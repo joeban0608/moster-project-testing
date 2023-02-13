@@ -7,6 +7,7 @@ const mockMonster = {
   email: "Rey.Padberg@karina.biz",
 };
 
-it('is render Card component', ()=>{
-  expect(shallow(<Card monster={mockMonster} />).length).toEqual(1)
-})
+it("is render Card component", () => {
+  // expect(shallow(<Card monster={mockMonster} />).length).toEqual(1)
+  expect(shallow(<Card monster={mockMonster} />)).toMatchSnapshot();
+});
