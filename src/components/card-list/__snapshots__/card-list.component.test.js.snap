@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`is render CardList component 1`] = `
+<div
+  className="card-list"
+>
+  <Card
+    key="10"
+    monster={
+      Object {
+        "email": "Rey.Padberg@karina.biz",
+        "id": 10,
+        "name": "Clementina DuBuque",
+      }
+    }
+  />
+  <Card
+    key="11"
+    monster={
+      Object {
+        "email": "Joe@karina.biz",
+        "id": 11,
+        "name": "Joe",
+      }
+    }
+  />
+</div>
+`;
