@@ -6,3 +6,4 @@ This is fork from https://github.com/ZhangMYihua/monsters-rolodex-v2
 - lesson-2-1 snapshot-testing-2 [praticing process](https://extreme-amethyst-885.notion.site/285-Snapshot-Testing-Code-Coverage-17030b462aad456abd7b748e3b36e88b)
 - lesson-3 testing statful component [praticing process](https://extreme-amethyst-885.notion.site/286-Testing-Stateful-Components-4db037ea6973421380787540a2fd4be2)
 - feat/add-redux-and-thunk
+- lesson-4 testing functional Components and hook [praticing process](https://extreme-amethyst-885.notion.site/296-Testing-Connected-Components-79b124b7c8644b8caf0c3afb444e4460)
