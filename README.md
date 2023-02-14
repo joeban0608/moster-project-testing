@@ -5,4 +5,4 @@ This is fork from https://github.com/ZhangMYihua/monsters-rolodex-v2
 - lesson-2 snapshot-testing [praticing process](https://extreme-amethyst-885.notion.site/284-Snapshot-Testing-a3ff9bde30cf4bba847fd0c81c481856)
 - lesson-2-1 snapshot-testing-2 [praticing process](https://extreme-amethyst-885.notion.site/285-Snapshot-Testing-Code-Coverage-17030b462aad456abd7b748e3b36e88b)
 - lesson-3 testing statful component [praticing process](https://extreme-amethyst-885.notion.site/286-Testing-Stateful-Components-4db037ea6973421380787540a2fd4be2)
-- fear/add-redux-and-thunk
+- feat/add-redux-and-thunk
