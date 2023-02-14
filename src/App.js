@@ -5,29 +5,33 @@ import SearchBox from "./components/search-box/search-box.component";
 import "./App.css";
 import CounterButton from "./components/counter-button/counter-button.component";
 import CounterButton2 from "./components/counter-button/counter-button-2-component";
+import { useSelector, useDispatch } from "react-redux";
+import { requestRobots, setSearchField } from "./action/action";
 
 const App = () => {
-  const [searchField, setSearchField] = useState("");
-  const [monsters, setMonsters] = useState([]);
-  const [filteredMonsters, setFilterMonsters] = useState(monsters);
+  const dispatch = useDispatch();
+  const { robots } = useSelector((state) => state.requestRobots);
+  const [filteredMonsters, setFilterMonsters] = useState(robots);
+  const { searchField } = useSelector((state) => state.searchRobots);
 
   useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/users")
-      .then((response) => response.json())
-      .then((users) => setMonsters(users));
+    const onRequestMonsters = () => {
+      dispatch(requestRobots());
+    };
+    onRequestMonsters();
   }, []);
 
   useEffect(() => {
-    const newFilteredMonsters = monsters.filter((monster) => {
+    const newFilteredMonsters = robots.filter((monster) => {
       return monster.name.toLocaleLowerCase().includes(searchField);
     });
 
     setFilterMonsters(newFilteredMonsters);
-  }, [monsters, searchField]);
+  }, [robots, searchField]);
 
   const onSearchChange = (event) => {
     const searchFieldString = event.target.value.toLocaleLowerCase();
-    setSearchField(searchFieldString);
+    dispatch(setSearchField(searchFieldString));
   };
 
   return (

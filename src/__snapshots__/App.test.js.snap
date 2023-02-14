@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`is render App component 1`] = `
+<div
+  className="App"
+>
+  <h1
+    className="app-title"
+  >
+    Monsters Rolodex
+  </h1>
+  <CounterButton />
+  <SearchBox
+    className="monsters-search-box"
+    onChangeHandler={[Function]}
+    placeholder="search monsters"
+  />
+  <CardList
+    monsters={Array []}
+  />
+</div>
+`;
