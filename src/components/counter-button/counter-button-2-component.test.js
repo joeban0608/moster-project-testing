@@ -10,6 +10,5 @@ it("correct increment add counter", () => {
   const wrapper = shallow(<CounterButton2 />);
   wrapper.find(`[id="counter"]`).simulate("click");
   // [ 'Count: ', 1 ]
-  console.log(wrapper.props())
   expect(wrapper.props().children).toEqual(["Count: ", 1]);
 });
