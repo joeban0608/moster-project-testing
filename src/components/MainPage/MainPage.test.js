@@ -4,6 +4,18 @@ import CardList from "../card-list/card-list.component";
 import SearchBox from "../search-box/search-box.component";
 import MainPage from "./MainPage";
 
+export const mockRobots = [
+  {
+    id: 1,
+    name: "Leanne Graham",
+    email: "Sincere@april.biz",
+  },
+  {
+    id: 2,
+    email: "Shanna@melissa.tv",
+    name: "Ervin Howell",
+  },
+];
 let wrapper;
 beforeEach(() => {
   const mockProps = {
@@ -20,18 +32,6 @@ it("is render MainPage component", () => {
 });
 
 it("filters Robots correctly", () => {
-  const mockRobots = [
-    {
-      id: 1,
-      name: "Leanne Graham",
-      email: "Sincere@april.biz",
-    },
-    {
-      id: 2,
-      email: "Shanna@melissa.tv",
-      name: "Ervin Howell",
-    },
-  ];
   const mockProps2 = {
     robots: mockRobots,
     searchField: "",
@@ -44,18 +44,6 @@ it("filters Robots correctly", () => {
 });
 
 it("searchBox is correctly", () => {
-  const mockRobots = [
-    {
-      id: 1,
-      email: "Sincere@april.biz",
-      name: "Leanne Graham",
-    },
-    {
-      id: 2,
-      email: "Shanna@melissa.tv",
-      name: "Ervin Howell",
-    },
-  ];
   const mockProps3 = {
     robots: mockRobots,
     searchField: "ervin",
