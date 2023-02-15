@@ -11,7 +11,7 @@ export const setSearchField = (text) => ({
   payload: text,
 });
 
-export const requestRobots = () => (dispatch) => {
+export const setRequestRobots = () => (dispatch) => {
   dispatch({ type: REQUEST_ROBOTS_PENDING });
   apiCall("https://jsonplaceholder.typicode.com/users")
     .then((data) => dispatch({ type: REQUEST_ROBOTS_SUCCESS, payload: data }))
