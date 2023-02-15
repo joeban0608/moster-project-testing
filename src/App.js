@@ -1,6 +1,6 @@
 import "./App.css";
 import { useSelector, useDispatch } from "react-redux";
-import { requestRobots, setSearchField } from "./action/action";
+import { setRequestRobots, setSearchField } from "./action/actions";
 import MainPage from "./components/MainPage/MainPage";
 
 const App = () => {
@@ -9,7 +9,7 @@ const App = () => {
   const { searchField } = useSelector((state) => state.searchRobots);
 
   const onRequestMonsters = () => {
-    dispatch(requestRobots());
+    dispatch(setRequestRobots());
   };
 
   const onSearchChange = (event) => {

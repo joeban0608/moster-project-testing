@@ -6,10 +6,10 @@ import reportWebVitals from "./reportWebVitals";
 import { combineReducers } from "redux";
 import { createStore } from "redux";
 import { applyMiddleware } from "redux";
-import thunkMiddleware from 'redux-thunk';
-import { requestRobots } from "./reducer.js/reducer";
-import { searchRobots } from "./reducer.js/reducer";
-import { Provider } from 'react-redux';
+import thunkMiddleware from "redux-thunk";
+import { requestRobots } from "./reducer.js/reducers";
+import { searchRobots } from "./reducer.js/reducers";
+import { Provider } from "react-redux";
 
 const rootReducers = combineReducers({ requestRobots, searchRobots });
 const store = createStore(rootReducers, applyMiddleware(thunkMiddleware));
