@@ -11,11 +11,21 @@ export const setSearchField = (text) => ({
   payload: text,
 });
 
+export const fetchRobotsSuccess = (robots) => ({
+  type: REQUEST_ROBOTS_SUCCESS,
+  payload: robots,
+});
+export const fetchRobotsFailed = (error) => ({
+  type: REQUEST_ROBOTS_FAILED,
+  payload: error,
+});
+export const fetchRobotsStart = () => ({
+  type: REQUEST_ROBOTS_PENDING,
+});
+
 export const setRequestRobots = () => (dispatch) => {
-  dispatch({ type: REQUEST_ROBOTS_PENDING });
+  dispatch(fetchRobotsStart());
   apiCall("https://jsonplaceholder.typicode.com/users")
-    .then((data) => dispatch({ type: REQUEST_ROBOTS_SUCCESS, payload: data }))
-    .catch((error) =>
-      dispatch({ type: REQUEST_ROBOTS_FAILED, payload: error })
-    );
+    .then((robots) => dispatch(fetchRobotsSuccess(robots)))
+    .catch((error) => dispatch(fetchRobotsFailed(error)));
 };

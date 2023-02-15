@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`is render MainPage component 1`] = `
+<div
+  className="main"
+>
+  <h1
+    className="main-title"
+  >
+    Monsters Rolodex
+  </h1>
+  <CounterButton />
+  <SearchBox
+    className="monsters-search-box"
+    placeholder="search monsters"
+  />
+  <CardList
+    monsters={Array []}
+  />
+</div>
+`;
