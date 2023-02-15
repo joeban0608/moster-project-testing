@@ -9,3 +9,4 @@ This is fork from https://github.com/ZhangMYihua/monsters-rolodex-v2
 - lesson-4 testing functional Components and hook [praticing process](https://extreme-amethyst-885.notion.site/296-Testing-Connected-Components-79b124b7c8644b8caf0c3afb444e4460)
 - lesson-5 testing reducers [praticing process](https://extreme-amethyst-885.notion.site/298-Testing-Reducers-fec21a44291643969feafbb72ac74f7a)
 - lesson-6 testing actions [praticing process](https://extreme-amethyst-885.notion.site/299-Testing-Actions-43e90fff40d848d9bc308ce1cf8008af)
+- lesson-6-1 testing async actions [praticing process](https://extreme-amethyst-885.notion.site/react-async-action-test-2591376218694dd78de279da47e2f9a9)
